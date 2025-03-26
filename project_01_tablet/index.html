@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .header {
+        text-align: center;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 6px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+      }
+      .table {
+        width: 60%;
+        border-collapse: collapse;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+      }
+      th {
+        background-color: #f4f4f4;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <button class="btn load-btn">Load Data</button>
+      </div>
+      <table class="table">
+        <tr>
+          <th>FirstName</th>
+          <th>SecondName</th>
+          <th>Age</th>
+          <th>Faculty</th>
+        </tr>
+        <tr>
+          <td>Анна</td>
+          <td>Анна</td>
+          <td>25</td>
+          <td>Economica</td>
+        </tr>
+        <tr>
+          <td>Иван</td>
+          <td>Иван</td>
+          <td>30</td>
+          <td>Managment</td>
+        </tr>
+        <tr>
+          <td>Мария</td>
+          <td>Мария</td>
+          <td>22</td>
+          <td>Banking</td>
+        </tr>
+      </table>
+    </div>
+    <script src="./js/model.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/controller.js"></script>
+    <script src="./js/storage.js"></script>
+    <script src="./js/view.js"></script>
+  </body>
+</html>
