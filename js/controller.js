@@ -3,7 +3,7 @@ const controller = {
     const students = await api.getStudents()
     storage.setStudentsStorage(students)
     model.setStudents(students)
-    view.renderMain(model.students)
+    view.renderTBodyStudents(model.students)
   },
   // handleRemoveTodo(id) {
   //   const newTodos = model.removeTodoById(model.todos, id)
